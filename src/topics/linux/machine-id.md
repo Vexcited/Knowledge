@@ -1,6 +1,6 @@
 # Machine ID
 
-> https://man7.org/linux/man-pages/man5/machine-id.5.html
+> <https://man7.org/linux/man-pages/man5/machine-id.5.html>
 
 - Located at `/etc/machine-id`
 - Can be regnerated with `systemd-machine-id-setup`
