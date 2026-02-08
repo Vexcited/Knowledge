@@ -51,3 +51,25 @@ git merge github/main
 # sync with radicle!
 git push
 ```
+
+## Troubleshooting
+
+### `Couldn't find key in agent?`
+
+If you ever try to commit something and you get the following error.
+
+```
+error: Couldn't find key in agent?
+fatal: failed to write commit object
+```
+
+That means your Radicle key is not in your `ssh-agent`, you can check this by running `ssh-add -l`.
+Thankfully, you can easily add it thanks to `rad auth`.
+
+```terminal
+$ rad auth
+✓ Passphrase: ******************
+✓ Radicle key added to ssh-agent
+```
+
+You can check again `ssh-add -l` and you should see your Radicle key here now!
