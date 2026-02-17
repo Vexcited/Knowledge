@@ -64,7 +64,10 @@ fatal: failed to write commit object
 ```
 
 That means your Radicle key is not in your `ssh-agent`, you can check this by running `ssh-add -l`.
-Thankfully, you can easily add it thanks to `rad auth`.
+
+Now, if you're using Bitwarden SSH Agent, please look at the [Bitwarden Guide for Radicle](./bitwarden.md) instead.
+
+Otherwise, you can run `rad auth` to use Radicle's SSH agent directly.
 
 ```terminal
 $ rad auth
