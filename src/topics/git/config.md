@@ -12,7 +12,6 @@ git config --global commit.gpgsign true
 
 git config --global rerere.enabled true
 git config --global fetch.pruneTags true
-git config --global core.ignorecase false
 ```
 
 ## User Configuration
