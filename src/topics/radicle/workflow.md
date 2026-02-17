@@ -10,10 +10,6 @@ I like to have my commits signed, so let's do this config per repository.
 
 ```sh
 git config user.signingKey "$(rad self --ssh-key)"
-git config gpg.format ssh
-git config gpg.ssh.program ssh-keygen
-git config gpg.ssh.allowedSignersFile .gitsigners
-git config commit.gpgsign true
 ```
 
 That way, I can keep my GPG key for non-Radicle repositories and other forges.
