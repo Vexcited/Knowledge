@@ -6,10 +6,11 @@
 rad clone z3Cqe7gEqxdqkGsPSS7KnBwJBBu5s
 ```
 
-I like to have my commits signed, so let's do this config per repository.
+Let's configure `git` for this cloned repository.
 
 ```sh
 git config user.signingKey "$(rad self --ssh-key)"
+git config gpg.ssh.allowedSignersFile .gitsigners
 ```
 
 That way, I can keep my GPG key for non-Radicle repositories and other forges.
