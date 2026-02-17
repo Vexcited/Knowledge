@@ -4,8 +4,7 @@ Here's all the global configuration I use across all my projects.
 
 ```sh
 git config --global gpg.format ssh
-git config --global gpg.ssh.program ssh-keygen
-git config --global gpg.ssh.allowedSignersFile .gitsigners
+git config --global gpg.ssh.program ssh-keygen # not required, but just in case
 
 git config --global tag.gpgSign true
 git config --global commit.gpgsign true
